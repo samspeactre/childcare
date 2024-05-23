@@ -1,0 +1,37 @@
+<ngx-paypal [config]="payPalConfig"></ngx-paypal>
+
+
+<div *ngIf="showSuccess">
+
+    <h2>Order Details</h2>
+
+    <form (submit)="submitForm()" method="post">
+        <div>
+            <label for="Order Time">Order Time:</label>
+            <input type="text" name="OrderTime" value="{{ orderDetails.create_time }}">
+        </div>
+
+        <div>
+            <label for="Order ID">Order ID:</label>
+            <input type="text" name="OrderID" value="{{ orderDetails.id }}">
+        </div>
+
+        <div>
+            <label for="Amount">Amount:</label>
+            <input type="text" name="Amount"
+                value="{{ orderDetails.purchase_units[0].amount.value }} {{ orderDetails.purchase_units[0].amount.currency_code }}">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+    </div>
+
+
+
+
+
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AYaHIsd8tuShlIH2qsGdGoLawx04XCi5pMTFxV_F6sh6eHJaGWHM48mLA4CIjtJ2M25DanAm8ytU1g9u"></script>

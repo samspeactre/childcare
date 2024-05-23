@@ -1,0 +1,119 @@
+<section>
+    <div class="lg-12 md-12 sm-12">
+        <div class="display left-site justify-content-between">
+
+            <div class="lg-4 md-4 sm-12 login-comp-form">
+
+                <div class="lg-5 sm-12 logo">
+                    <a href="" routerLink="/">
+                        <img src="../../assets/img/nav-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="lg-10 md-8 sm-12">
+                    <h1 class="head-1">Register</h1>
+                    <h3>Enter your details to get started.</h3>
+
+                    <form *ngIf="addForm" novalidate [formGroup]="addForm" class="form login-form">
+
+                        <div class="lg-12 sm-12">
+                            <input type="text" formControlName="fname" name="fname" placeholder="Full Name"
+                                class="login-input  ">
+                            <div class="validations-error"
+                                *ngIf="addForm?.get('fname')?.invalid && (addForm?.get('fname')?.dirty || addForm?.get('fname')?.touched)">
+                                {{ getErrorMessage('fname') }}
+                            </div>
+                        </div>
+
+                        <div class="lg-12 sm-12">
+                            <input type="email" formControlName="email" name="email" placeholder="Email Address"
+                                class="login-input input-top ">
+                            <div class="validations-error"
+                                *ngIf="addForm?.get('email')?.invalid && (addForm?.get('email')?.dirty || addForm?.get('email')?.touched)">
+                                {{ getErrorMessage('email') }}
+                            </div>
+                        </div>
+
+                        <div class="lg-12 sm-12">
+                            <input type="number" formControlName="phone" name="phone" placeholder="Phone Number"
+                                class="login-input input-top ">
+                            <div class="validations-error"
+                                *ngIf="addForm?.get('phone')?.invalid && (addForm?.get('phone')?.dirty || addForm?.get('phone')?.touched)">
+                                {{ getErrorMessage('phone') }}
+                            </div>
+                        </div>
+
+                        <div class="lg-12 sm-12">
+                            <input type="password" formControlName="pass" name="pass" placeholder="Password"
+                                class="login-input input-top ">
+                            <div class="validations-error"
+                                *ngIf="addForm?.get('pass')?.invalid && (addForm?.get('pass')?.dirty || addForm?.get('pass')?.touched)">
+                                {{ getErrorMessage('pass') }}
+                            </div>
+                        </div>
+
+                        <div class="lg-12 sm-12 ">
+                            <input type="password" formControlName="Cpass" name="Cpass" placeholder="Confirm Password"
+                                class="login-input input-top ">
+                            <div class="validations-error"
+                                *ngIf="addForm?.get('Cpass')?.invalid && (addForm?.get('Cpass')?.dirty || addForm?.get('Cpass')?.touched)">
+                                {{ getErrorMessage('Cpass') }}
+                            </div>
+                        </div>
+
+                        <div class="lg-12 sm-12 checkbox-width ">
+                            <div>
+                                <input type="checkbox" class="check-input" id="exampleCheck1">
+                                <label class="check-label " for="exampleCheck1">Receive latest updates Via
+                                    Email</label>
+                            </div>
+                        </div>
+
+                        <div class=" lg-12 sm-12 login-button">
+                            <button class="border-0 bg-transparent" [disabled]="addForm.invalid" (click)="onSubmit()">
+                                <span class="login-btn">Login</span>
+                            </button>
+                        </div>
+
+                        <!-- (click)="open(content)" -->
+
+                        <div class="lg-12 sm-12 create-acc ">
+                            <h4 class="pt-lg-1">Already have an account?
+                                <a routerLink="/login-form" href="" class="acc-color">Login</a>
+                            </h4>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="lg-8 sm-12 login-img-portion">
+                <img src="../../assets/img/login-img.png" alt="" class="login-img">
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <app-copyright></app-copyright>
+    </div>
+</section>
+
+
+<!-- Modal Template -->
+
+<!-- <ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">PAYMENT</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form action="">
+            <app-paypal-payment></app-paypal-payment>
+        </form>
+    </div>
+    <div class="modal-footer text-center">
+        <button type="button" class="btn btn-success" [disabled]="addForm.invalid"
+            (click)="modal.close('Save click')">Save</button>
+    </div>
+</ng-template> -->

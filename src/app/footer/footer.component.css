@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'semi-bold';
+    font-size: 23px;
+    color: var(--white);
+     text-transform: capitalize;
+}
+
+h2 {
+    font-family: 'bold';
+    font-size: 23px;
+    color:var(--white);
+    text-transform: capitalize;
+}
+
+p {
+    font-family: 'regular';
+    font-size: 0.85vw;
+    line-height: 18px;
+    color:var(--white);
+}
+
+.footer-logo{
+    width: 15.5vw;
+}
+
+.footer-bg{
+    background-color:var(--footer);
+}
+
+.footer-content{
+    padding-top: 4vw;
+    padding-bottom: 2.8vw;
+}
+
+.para{
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 2vw;
+}
+
+.social-links{
+    place-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.social-icon img{
+    width: 1.2vw;
+    object-fit: cover;
+}
+
+.fb img{
+    width: 0.7vw;
+    object-fit: cover;
+}
+
+.links-side{
+    width: 29.05%;
+    padding-bottom: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    h1 {
+        font-size: 7vw;
+        line-height: 31px;
+    }
+    
+    h2{
+       font-size: 4vw;
+    }
+    
+    p {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+
+    .container-site {
+        padding-left: 4.5vw;
+        padding-right: 4.5vw;
+        margin-top: 0;
+    }
+
+    .footer-logo{
+        width: 32vw;
+    }
+
+    .social-links{
+        padding: 0;
+        justify-content: space-between;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .social-links img{
+        width: 16px;
+    }
+
+    .fb img{
+        width: 9px;
+    }
+
+    .links-side{
+        width: 25%;
+    }
+
+    .para{
+        padding-bottom: 16px;
+    }
+
+    .footer-content{
+        padding-bottom: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 3.2vw;
+        line-height: 28px;
+    }
+
+    h2{
+        font-size: 1.8vw;
+    }
+
+    h3 {
+        font-size: 1.6vw;
+    }
+
+    p {
+        font-size: 1.1vw;
+        line-height: 1.5vw;
+    }
+
+    .para{
+        padding-left:8.5vw;
+        padding-right: 8.5vw;
+        padding-top: 2vw;
+    }
+
+    .social-links{
+        padding-left: 12vw;
+        padding-right: 12vw;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,45 @@
+<section>
+    <app-dashboard-nav></app-dashboard-nav>
+    <div class="lg-12">
+        <div class="row">
+            <div class="container-site">
+
+                <h1 class="head-1">finding qualified candidates </h1>
+
+                <div class="lg-12 sm-12 content-box mt-lg-0 mt-1">
+                    <div class="d-flex">
+
+                        <div class="lg-12 md-12 sm-12 ">
+                            <div class="row justify-content-between card-width">
+                                <div class="employee-card" *ngFor="let card of cards">
+
+                                    <div class="lg-3 md-3 sm-3 card-img">
+                                        <div class="display">
+                                            <div class="lg-4 md-4 sm-4 ">
+                                                <img [src]="card.imageUrl" alt="Card Image">
+                                            </div>
+                                            <div class="lg-8 sm-8 card-content ">
+                                                <div class="text-center qualified-badge "> Qualified </div>
+                                                    <h2 class="qualified-head">{{ card.heading1 }}</h2>
+                                                    <h3 class="employee-dob ">{{card.DOB}}</h3>
+                                                    <h3>{{card.num}}</h3>
+                                            </div>
+
+                                        </div>
+                                        <div class="lg-12 qualified-para">
+                                            <p class="para-1">{{card.para}}</p>
+                                        </div>
+                                        <p class="qualified-sec-para">{{card.para2}}</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-copyright></app-copyright>
+</section>

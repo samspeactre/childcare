@@ -1,0 +1,404 @@
+h1{
+    font-size: 1.5vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-site{
+   padding-left: 4.5vw;
+   padding-right: 4.5vw;
+   height: 100vh;
+   background-color: var(--light-blue);
+}
+
+.profile-nav{
+    width: 100%;
+    background-color: var(--dark-blue);
+    margin-top: 2.5vw;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw ;
+}
+
+.links a,
+.back-btn a{
+    font-family: 'medium';
+    font-size: 1.5vw;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover,
+.back-btn a:hover{
+  color: var(--yellow);
+}
+
+.slash{
+    font-size: 1.5vw;
+    color: var(--white);
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.back-icon{
+    font-size: 1vw;
+    color: var(--white);
+    margin-right: 0.5vw;
+}
+
+.profile-info{
+    margin-top: 2vw;
+    width: 100%;
+    padding: 1.5vw 2vw 1.5vw;
+    border-radius: 0.5vw;
+    background-color: var(--white);
+}
+
+.profile-box{
+    width: 10vw;
+    height: 10vw;
+    margin-left: 3vw;
+}
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name{
+    margin-top: 0.7vw;
+    text-align: center;
+}
+
+.edit{
+    text-align: center;
+}
+
+.edit{
+    font-size: 1.3vw;
+    font-family: 'medium';
+    color: var(--yellow);
+    text-align: center;
+    text-decoration: none;
+}
+
+.edit:hover{
+    color: rgb(247 154 31 / 65%);
+}
+
+.edit-icon{
+    margin-right: 0.5vw;
+}
+
+.db{
+    display: block;
+    width: 24%;
+}
+
+.social-links-box{
+    margin-top: 1vw;
+    width: 100%;
+    border-radius: 0.5vw;
+    background-color: var(--white);
+}
+
+.social-name{
+    color: var(--black);
+    font-size: 1.3vw;
+    font-family: "medium";
+    margin-left: 0.7vw;
+}
+
+.social-icon{
+    font-size: 1.4vw;
+    color: var(--black);
+}
+
+.social-padding{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    display: block;
+    border-bottom: 0.1vw solid var(--yellow);
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.no-border {
+    border-bottom: none;
+  }
+
+  .user-info{
+    background-color: var(--white);
+    width: 75%;
+    margin-top: 2vw;
+    padding-top: 1vw;
+    border-radius: 0.5vw;
+  }
+
+  .head-1{
+    padding-left: 1.5vw;
+    font-size: 2vw;
+    font-family: 'bold';
+  }
+
+  .form-sec{
+    padding: 1.5vw 1.5vw;
+  }
+
+  .form-head{
+    font-family: 'medium';
+    font-size: 1.3vw;
+    width: 14%;
+  }
+
+  .form-field{
+    width: 61.5vw;
+    border-bottom: 0.11vw solid var(--yellow);
+    padding-bottom: 1vw;
+    margin-bottom: 0.8vw;
+  }
+
+  .input-name{
+    width: 80%;
+    font-size: 1vw;
+    border: 0;
+  }
+
+  .form-edit{
+    padding: 0.6vw 1.8vw;
+    border: 0;
+    background-color: var(--yellow);
+    color: var(--white);
+    font-size: 1vw;
+    font-family: 'bold';
+    border-radius: 0.3vw;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  }
+
+  .form-edit:hover{
+    color: var(--yellow);
+    background-color: transparent;
+    border: 0.1vw solid var(--yellow);
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: 3.5vw;
+    }
+
+    .container-site{
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+
+    .links a,
+    .back-btn a{
+        font-size: 4vw;
+    }
+
+    .slash{
+        font-size: 4vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .profile-nav{
+        padding: 1vw 2vw;
+    }
+
+    .display{
+        padding: 0;
+        
+    }
+
+    .db{
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+    }
+
+    .row{
+        padding: 0;
+        --bs-gutter-x: 0!important;
+        justify-content: space-between;
+    }
+
+    .profile-info{
+        width: 30%;
+        border-radius: 1vw;
+    }
+
+    .profile-box{
+        width: 18vw;
+        height: 18vw;
+        margin-left: 2vw;
+    }
+
+    .edit{
+        font-size: 3vw;
+    }
+
+    .social-links-box{
+        margin-top: 2vw;
+        width: 67%;
+        margin-left: 3%;
+        border-radius: 1vw;
+    }
+
+    .social-icon{
+        font-size: 3.5vw;
+    }
+
+    .social-name{
+        font-size: 2.8vw;
+        margin-left: 2.7vw;
+    }
+
+    .user-info {
+        width: 100%;
+        margin-top: 3%;
+        border-radius: 1.5vw;
+    }
+
+    .head-1 {
+        padding-left: 3vw;
+        font-size: 4vw;
+    }
+
+    .form-field{
+        padding-bottom: 2vw;
+        margin-bottom: 1.8vw;
+        width: 100%;
+    }
+
+    .form-head{
+        font-size: 3vw;
+    }
+
+    .form-sec{
+        padding: 2.5vw 3.5vw;
+    }
+
+    .input-name{
+        width: 68%;
+        margin-left: 10vw;
+        font-size: 3vw;
+    }
+
+    .form-edit {
+        padding: 1.6vw 4.8vw;
+        font-size: 2.5vw;
+        border-radius: 1vw;
+        margin-top: 2%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1{
+        font-size: 3vw;
+    }
+
+    .links a,
+    .back-btn a{
+        font-size: 2.8vw;
+    }
+
+    .slash{
+        font-size: 2.8vw;
+    }
+
+    .db{
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    .row{
+        padding: 0;
+        --bs-gutter-x: 0!important;
+        justify-content: space-between;
+    }
+
+    .profile-info{
+        margin-top: 1vw;
+        width: 47%;
+        padding: 2vw 2vw 2.5vw;
+        border-radius: 1.5vw;
+    }
+
+    .profile-box {
+        width: 20vw;
+        height: 20vw;
+        margin-left: 3vw;
+    }
+
+    .edit{
+        font-size: 3vw;
+    }
+
+    .social-icon {
+        font-size: 4.4vw;
+    }
+
+    .social-name {
+        font-size: 3.3vw;
+        margin-left: 2.7vw;
+    }
+
+    .social-padding{
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .social-links-box{
+        margin-left: 3%;
+        border-radius: 1vw;
+    }
+
+    .head-1{
+        padding-left: 3.5vw;
+        font-size: 4vw;
+    }
+
+    .user-info{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 1vw;
+    }
+
+    .form-field {
+        padding-bottom: 1.5vw;
+        margin-bottom: 1.8vw;
+        width: 100%;
+    }
+
+    .form-head {
+        font-size: 2.7vw;
+    }
+
+    .form-sec{
+        padding: 2.5vw 3.5vw;
+    }
+
+    .input-name{
+        width: 70%;
+        margin-left: 8vw;
+        font-size: 2.5vw;
+    }
+
+    .form-edit {
+        padding: 1.5vw 5.8vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+    }
+
+  }

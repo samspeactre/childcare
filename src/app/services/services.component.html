@@ -1,0 +1,35 @@
+<section id="service">
+    <div class="col-lg-12 col-sm-12 container-site">
+        <div class="row">
+            <h3 class="page-align">Services</h3>
+            <h1 class="page-align pt-lg-1 pt-1 head-1">What we do?</h1>
+
+            <div class="col-lg-12 mt-lg-1 mt-1 mb-lg-0 mb-2">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 col-12">
+                        <p class="page-align para-1">Lorem ipsum dolor sit amet consectetur. Cursus turpis
+                            tristique
+                            sit
+                            accumsan. Tincidunt mi nam nec tincidunt non. </p>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-12 mt-lg-5">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-6 card-width" *ngFor="let card of cards">
+                        <img [src]="card.imageUrl" alt="Card Image" class="service-card-img">
+                        <h2 class="pt-lg-3 pt-2">{{ card.title }}</h2>
+                        <p class="card-para pt-lg-2 pb-lg-2">{{ card.description }}</p>
+                        <div class="service-btn">
+                            <a [href]="card.buttonUrl" class="card-btn button">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

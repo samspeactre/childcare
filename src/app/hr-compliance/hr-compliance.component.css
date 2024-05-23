@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'bold';
+    font-size: 2.6vw;
+    color:var(--black);
+    text-transform: capitalize;
+}
+
+h2{
+    font-family: 'bold';
+    font-size: 1.03vw;
+    color: var(--gray);
+}
+
+.container-site {
+    padding-left: 4.5vw;
+    padding-right: 3.5vw;
+    padding-top: 1.85vw;
+    padding-bottom: 14.9vw;
+    background-color:var(--light-blue);
+}
+
+.card-width{
+    width: 24%;
+    padding: 0;
+}
+
+.pdf-content {
+    padding-top: 2vw;
+}
+
+.pdf-card{
+    background-color:var(--pdf-card);
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    text-align: center;
+    align-items: center;
+    padding: 6.7vw 0vw;
+}
+
+.pdf-logo{
+    width: 5.7vw;
+    height: 7.2vw;
+    object-fit: cover;
+}
+
+.card-bottom{
+    padding: 1.7vw 1.3vw 1.7vw;
+    background-color:var(--white);
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+}
+
+.sort-text{
+    font-family: 'bold';
+    font-size: 0.75vw;
+    margin-right: 1vw;
+}
+
+select{
+    width: 9.5vw;
+    background-color: transparent;
+    border: 1px solid rgba(217, 217, 217, 1);
+    padding: 0.7vw 0.8vw 0.7vw;
+    font-size: 0.82vw;
+}
+
+.fa-ellipsis-vertical{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 5vw;
+        line-height: 31px;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 2.6vw;
+        line-height: 3.2vw;
+    }
+
+    .container-site {
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+        margin-top: 0;
+        padding-bottom: 0;
+        height: 100vh;
+    }
+
+    .card-width{
+        width: 48%;
+        margin-top: 4vw;
+    }
+
+    .pdf-logo{
+        width: 9vw;
+        height: 12vw;
+        object-fit: cover;
+    }
+
+    .pdf-content{
+        width: 100%;
+        padding: 0vw 3vw 0vw;
+    }
+
+    .pdf-card{
+        
+        padding: 13vw 0vw;
+    }
+
+    select{
+        width: 13.5vw;
+        padding: 5px 0px 5px;
+        font-size: 2vw;
+    }
+
+    .sort-text{
+        font-size: 1.75vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    h3{
+        font-size: 1.4vw;
+    }
+
+    h4{
+        font-size: 1.3vw;
+    }
+
+    .container-site{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 6.5vw;
+        padding-right: 6.5vw;
+        height: 100vh;
+    }
+
+    .head-1{
+        padding-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .pdf-content{
+        width: 100%;
+        padding: 0vw 2vw 0vw;
+        margin-top: 0;
+    }
+
+    .card-width{
+        width: 48.5%;
+       padding-bottom: 3vw;
+    }
+
+    .sort-text {
+        font-size: 1.4vw;
+    }
+
+    select{
+        width: 15.5vw;
+        font-size: 13px;
+    }
+
+    .pdf-logo{
+        width: 9.7vw;
+        height: 12.2vw;
+    }
+
+    .pdf-card{
+        padding: 12vw 0vw;
+    }
+
+    .sort-area{
+        align-content: center;
+    }
+}

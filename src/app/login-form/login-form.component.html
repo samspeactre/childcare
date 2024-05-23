@@ -1,0 +1,63 @@
+<section>
+    <div class="lg-12 md-12 sm-12">
+        <div class="display left-site justify-content-between">
+
+            <div class="lg-4 md-4 sm-12 login-comp-form">
+
+                <div class="lg-5 sm-12 logo">
+                    <a href="" routerLink="/">
+                        <img src="../../assets/img/nav-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="lg-10 md-8 sm-12">
+                    <h1 class="head-1">Login</h1>
+                    <h3>Enter your credentials to get started.</h3>
+
+                    <!-- login-form.component.html -->
+
+                    <form (ngSubmit)="login()" class="login-form">
+                        <div class="lg-12 sm-12">
+                            <input type="email" placeholder="Email Address" class="login-input" [(ngModel)]="email"
+                                name="email" required>
+                        </div>
+                        <div class="lg-12 sm-12">
+                            <input type="password" placeholder="Password" class="login-input" [(ngModel)]="password"
+                                name="password" required>
+                        </div>
+                        <div class="lg-12 md-12 sm-8 d-flex justify-content-between checkbox-width">
+                            <div class="display">
+                                <input type="checkbox" class="check-input checkbox-input" id="exampleCheck1">
+                                <label class="check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <div class="forget">
+                                <a href="#">
+                                    <h4>Forget Password?</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg-4 sm-12 login-button">
+                            <button type="submit" class="border-0 bg-transparent">
+                                <span class="login-btn">Login</span>
+                            </button>
+                        </div>
+                        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+                        <div class="lg-4 sm-12 create-acc">
+                            <h4>Not registered? <a routerLink="/register" class="acc-color">Create an Account</a></h4>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+            <div class="lg-8 sm-12 login-img-portion">
+                <img src="../../assets/img/login-img.png" alt="" class="login-img">
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <app-copyright></app-copyright>
+    </div>
+</section>

@@ -1,0 +1,113 @@
+<section>
+
+    <div class="lg-12 ">
+        <div class="row">
+            <app-dashboard-nav></app-dashboard-nav>
+
+            <div class="container-site">
+                <h1 class="head-1">State Finding</h1>
+
+                <div class="content-box">
+                    <div class="row">
+
+                        <div class="lg-8 md-10  rating-card" *ngFor="let card of cards">
+                            <div class="row">
+
+                                <div class="lg-2 img-width">
+                                    <div class="img-box">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="state-content  ">
+                                    <div class="row content">
+
+                                        <div class="lg-9 md-10  tiltle-stars display">
+                                            <h2>{{card.title}}</h2>
+                                            <span class=" stars">{{card.star}}</span>
+                                        </div>
+
+
+
+                                        <h4 class="child-care-head">{{card.careCenter}}</h4>
+
+                                        <!-- Additional content to show/hide -->
+
+                                        <div class="row additional-content" *ngIf="card.showDetails">
+                                            <div class=" ">
+                                                <div class="row address">
+                                                    <h3 class="  contact-num">{{card.contact}} </h3>
+                                                    <h3 class="  contact-add">
+                                                        <span class="slash">|</span>
+                                                        {{card.address}}
+                                                    </h3>
+                                                    <h4>Current program status: <span
+                                                            class="status">{{card.status}}</span></h4>
+                                                    <h4>Licensed: <span class="status">{{card.Licensed}}</span></h4>
+                                                    <div class=" view-btn">
+                                                        <span class="btn"> View</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="lg-4  right-side ">
+                                                <div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row add-btn">
+                                            <div class="lg-12 ">
+                                                <button class="add-btn-styling" (click)="toggleDetails(card)">{{
+                                                    card.showDetails ? 'Read Less' : 'Read More' }}
+                                                    <span><i class="fa-solid fa-arrow-right add-btn-icon"></i></span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Additional content to show/hide -->
+
+                                        <div class="display address hidden-content">
+                                            <h3 class="lg-4 contact-num">{{card.contact}} </h3>
+                                            <span class="slash">|</span>
+                                            <h3 class="lg-8 contact-add">
+
+                                                {{card.address}}
+                                            </h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="lg-3 right-side hidden-content">
+                                    <div class="">
+                                        <h4 class="lg-12 card-status">Current program status:
+                                            <span class="status">{{card.status}}</span>
+                                        </h4>
+                                        <h4 class="lg-12 card-status-2">Licensed: <span class="status">{{card.Licensed}}</span>
+                                        </h4>
+                                        <div class="lg-6  view-btn">
+                                            <span class="btn"> View</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-copyright></app-copyright>
+</section>

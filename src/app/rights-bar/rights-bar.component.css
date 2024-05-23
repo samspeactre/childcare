@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'regular';
+    font-size: 1.01vw;
+    color: var(--white);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.right-bar{
+    background-color:var(--dark-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    
+    h1 {
+        font-size: 7vw;
+        line-height: 31px;
+    }
+    
+    h2{
+       font-size: 4vw;
+    }
+    
+    p {
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .container-site {
+        padding-left: 4.5vw;
+        padding-right: 4.5vw;
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    p {
+        font-size: 1.8vw;
+    }
+}

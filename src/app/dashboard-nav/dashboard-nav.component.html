@@ -1,0 +1,176 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<section>
+    <div class="col-lg-12">
+        <div class="d-flex">
+
+            <nav class="col-lg-12 col-12 navbar navbar-expand-lg  container-site">
+
+                <div class="d-flex col-md-12 navbar-site">
+
+
+
+                    <div class="col-lg-3 col-8 nav-logo">
+                        <a class="navbar-brand" routerLink="/dashboard">
+                            <img src="../../assets/img/nav-logo.png" alt="Logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <!-- sidenav -->
+                    <div (click)="openModal()" class="col-6 col-md-4 sidebar-btn">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+
+                    <div class="modal" [ngClass]="{'open': isOpen}" (click)="closeModal()">
+                        <div class="modal-content">
+
+                            <div class="logo">
+                                <a href="">
+                                    <img src="../../assets/img/nav-logo.png" alt="" class="sidebar-logo">
+                                </a>
+                                <!-- <span class="close" (click)="closeModal()">&times;</span> -->
+                            </div>
+                            <div class="sidelinks">
+
+                                 <a routerLink="/dashboard">
+                                    <div class="side-items">Dashboard</div>
+                                 </a>
+                                 
+                                 <a routerLink="/search-employee">
+                                    <div class="side-items">Search Employee</div>
+                                 </a>
+
+                                 <a routerLink="/search-parent">
+                                    <div class="side-items">Search Parent</div>
+                                 </a>
+
+
+                                 <a routerLink="/finding-qualified">
+                                    <div class="side-items">finding qualified</div>
+                                 </a>
+
+                                 <a routerLink="/state-finding">
+                                    <div class="side-items">state finding</div>
+                                 </a>
+
+                                 <a routerLink="/hr-comliance">
+                                    <div class="side-items">Hr compliance </div>
+                                 </a>
+
+                                 <a routerLink="/additional-info">
+                                    <div class="side-items">additional information</div>
+                                 </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- sidenav -->
+
+
+
+                    <div class="col-lg-11 col-md-0 col-12 nav-items" id="navbarSupportedContent">
+
+                        <div class="d-flex justify-content-between">
+
+                            <ul class="col-lg-11 navbar-item-links justify-content-between mt-lg-1 d-flex">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active " aria-current="page" routerLink="/dashboard">
+                                        <h1 class="nav-head">Dashboard</h1>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/search-employee">
+                                        <p class="hover-text">Search Employee</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/search-parent">
+                                        <p class="hover-text">Search Parent</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/finding-qualified">
+                                        <p class="hover-text">finding qualified</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/state-finding">
+                                        <p class="hover-text">state finding</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/hr-comliance">
+                                        <p class="hover-text">Hr compliance </p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/additional-info">
+                                        <p class="hover-text">additional information</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <div class="col-lg-2 profile-icon-width">
+                                <div class="d-flex justify-content-between">
+
+                                    <div class="profile-icon">
+                                        <button mat-icon-button [matMenuTriggerFor]="searchmenu">
+                                            <i class="fa-solid fa-magnifying-glass nav-icon-size"></i>
+                                        </button>
+                                        <mat-menu #searchmenu="matMenu">
+                                             <input type="text" placeholder="search...">
+                                        </mat-menu>
+                                    </div>
+
+                                    <div class="profile-icon">
+                                        <button mat-icon-button [matMenuTriggerFor]="notificationMenu">
+                                            <i class="fa-solid fa-bell nav-icon-size"></i>
+                                        </button>
+                                        <mat-menu class="noti-menu" #notificationMenu="matMenu">
+                                            <button mat-menu-item>Notification 1</button>
+                                            <button mat-menu-item>Notification 2</button>
+                                            <button mat-menu-item>Notification 3</button>
+                                        </mat-menu>
+                                    </div>
+
+                                    <div class="profile-icon">
+                                        <button mat-icon-button [matMenuTriggerFor]="menu" class="profile-icon">
+                                            <img [src]="profileImageUrl" alt="Profile" class="profile-img">
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <a mat-menu-item routerLink="/profile">Profile</a>
+                                            <a mat-menu-item routerLink="/user-list">User List</a>
+                                            <button mat-menu-item (click)="logout()">Logout</button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+
+
+        </div>
+    </div>
+</section>
+
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>

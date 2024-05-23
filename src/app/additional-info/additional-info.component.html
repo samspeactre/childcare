@@ -1,0 +1,43 @@
+<section>
+    <app-dashboard-nav></app-dashboard-nav>
+    <div class="lg-12 md-12">
+        <div class="row">
+            <div class="container-site">
+
+                <div class="display justify-content-between">
+
+                    <h1 class="head-1">Additional Information</h1>
+
+                    <div class="sort-area">
+                        <label for="sortOptions"><span class="sort-text">Sort By:</span></label>
+                        <select id="sortOptions" >
+                            <option value="latest">Latest</option>
+                            <option value="new">New</option>
+                            <option value="old">Old</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="lg-12 md-12 additional-content">
+                    <div class="row">
+    
+                        <div class="lg-3 md-4  additional-card" *ngFor="let card of cards">
+                            <img [src]="card.imageUrl" alt="Card Image" class="card-img ">
+                            <div class="date d-flex ">
+                                <i class="fa-regular fa-calendar-check  "></i>
+                                <p >{{card.date}}</p>
+                            </div>
+                            <h2 >{{card.title}}</h2>
+                            <div class="lg-12 para">
+                                <h3>{{card.para}}</h3>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <app-copyright></app-copyright>
+</section>

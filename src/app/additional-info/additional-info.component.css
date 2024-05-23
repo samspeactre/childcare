@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'medium';
+    src: url('../../assets/fonts/NeueMontreal-Medium.otf');
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+    color: var(--black);
+}
+
+h1 {
+    font-family: 'bold';
+    font-size: 2.6vw;
+}
+
+h2 {
+    font-family: 'bold';
+    font-size: 1.04vw;
+    margin-top: 0.5vw;
+}
+
+h3 {
+    font-family: 'regular';
+    font-size: 0.73vw;
+    margin-top: 0.5vw;
+}
+
+p {
+    font-family: 'regular';
+    font-size: 0.6vw;
+    margin-left: 0.3vw;
+}
+
+.container-site {
+    padding-left: 4.6vw;
+    padding-right: 4.6vw;
+    padding-top: 1.85vw;
+    padding-bottom: 18.5vw;
+    background-color: var(--light-blue);
+}
+
+.head-1 {
+    padding-bottom: 1.9vw;
+}
+
+.card-img {
+    height: 15.4vw;
+    width: 22.3vw;
+    object-fit: cover;
+}
+
+.fa-calendar-check {
+    font-size: 0.8vw;
+    padding-top: 0.1vw;
+}
+
+.para {
+    width: 96%;
+}
+
+.additional-card {
+    width: 25%;
+    margin-bottom: 1.5%;
+}
+
+.sort-text {
+    font-family: 'bold';
+    font-size: 0.75vw;
+    margin-right: 1vw;
+}
+
+select {
+    width: 9.5vw;
+    background-color: transparent;
+    border: 1px solid rgba(217, 217, 217, 1);
+    padding: 0.7vw 0.8vw 0.7vw;
+    font-size: 0.82vw;
+}
+
+.date {
+    margin-top: 1.2vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 5vw;
+        line-height: 31px;
+    }
+
+    h2 {
+        font-size: 3.1vw;
+    }
+
+    h3 {
+        font-size: 2.23vw;
+    }
+
+    p {
+        font-size: 2vw;
+        line-height: 17px;
+        margin-left: 0.8vw;
+    }
+
+    .container-site {
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+        height: 100vh;
+        padding-bottom: 0;
+    }
+
+    .additional-card {
+        width: 50%;
+        margin-top: 4vw;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 33vw;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    select {
+        width: 13.5vw;
+        padding: 5px 0px 5px;
+        font-size: 2vw;
+    }
+
+    .sort-text {
+        font-size: 2.2vw;
+    }
+
+    .fa-calendar-check{
+        font-size: 1.8vw;
+        padding-top: 1.1vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    h3 {
+        font-size: 1.4vw;
+    }
+
+    h4 {
+        font-size: 1.3vw;
+    }
+
+    p {
+        font-size: 1.1vw;
+        padding-top: 0.5vw;
+        margin-left: 0.8vw;
+    }
+
+    .container-site {
+        padding-bottom: 0;
+        height: 100vh;
+    }
+
+    .sort-text {
+        font-size: 1.4vw;
+    }
+
+    select {
+        width: 15.5vw;
+        font-size: 13px;
+    }
+
+    .additional-card {
+        width: 50%;
+        margin-bottom: 3vw;
+    }
+
+    .card-img {
+        height: 28.5vw;
+        width: 100%;
+    }
+
+    .date {
+        margin-top: 1.5vw;
+    }
+
+    .fa-calendar-check {
+        font-size: 13px;
+        padding-top: 1px;
+    }
+
+    .additional-content {
+        margin-top: 2vw;
+    }
+}

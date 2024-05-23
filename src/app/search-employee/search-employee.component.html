@@ -1,0 +1,63 @@
+<section>
+    <app-dashboard-nav></app-dashboard-nav>
+
+    <div class="lg-12">
+        <div class="row">
+            <div class="container-site">
+                <h1>Search Employee</h1>
+
+                <div class="lg-7 md-12 sm-12 search-bars">
+                    <div class="d-flex">
+                        <div class="lg-5 md-7 sm-5 name-bar">
+                            <input name="searchName" type="text" placeholder="Employee Name"
+                                class="form-control name-column" [(ngModel)]="searchName">
+                        </div>
+                        <div class="lg-7 md-7 sm-7 search-column">
+                            <form class="d-flex" role="search">
+                                <input name="searchDob" placeholder="Employee date of birth" class="form-control"
+                                    type="search" aria-label="Search" [(ngModel)]="searchDob">
+                                <button class="serach-btn" type="button" (click)="search()">
+                                    <img src="../../assets/img/search-btn-icon.png" alt="" class="search-icon">
+                                    <span class="search-text">search</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <h2>Employee</h2>
+
+
+                <div class="lg-12 md-12 content-box">
+                    <div class="row">
+
+                        <div class="lg-12 md-12 card-box">
+                            <div class="row card-padding">
+                                <div class="lg-3 md-4 employee-card" *ngFor="let user of filteredUsers">
+
+                                    <div class="lg-6 card-img">
+                                        <div class="d-flex">
+                                            <img src="../../assets/img/bydefault-img.png" alt="Card Image">
+                                            <div class="lg-6 card-content">
+                                                <h3>{{ user.name }}</h3>
+                                                <p class="employee-dob ">{{ user.dob }}</p>
+                                                <p>{{ user.phoneNumber }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <app-copyright></app-copyright>
+</section>

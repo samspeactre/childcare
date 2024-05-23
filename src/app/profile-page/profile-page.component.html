@@ -1,0 +1,103 @@
+<section>
+    <div class="lg-12 container-site">
+        <div class="row">
+
+            <div class="profile-nav">
+                <div class="display justify-content-between">
+
+                    <div class="links">
+                        <a href="" routerLink="/dashboard">Dashboard</a>
+                        <span class="slash">/</span>
+                        <a href="">Profile</a>
+                    </div>
+
+                    <!-- <div class="back-btn">
+                        <i class="fa-solid fa-angle-left back-icon"></i>
+                        <a href="">Back</a>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <div class="db">
+
+                    <div class="profile-info">
+
+                        <div class="profile-box">
+                            <img [src]="profileImageUrl" alt="Profile Image" class="profile-img">
+                            <input type="file" id="profile-image-upload" accept="image/*" style="display: none;"
+                                (change)="changeProfileImage($event)">
+                        </div>
+
+                        <!-- <div class="name">
+                          <h1>John Doe</h1>
+                        </div> -->
+                        <div class="edit">
+                            <label for="profile-image-upload">
+                                <i class="fa-regular fa-pen-to-square edit-icon"></i>
+                                <span>Edit</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="social-links-box">
+
+                        <div class="social-links">
+                            <a *ngFor="let link of socialMediaLinks; let last = last" href="{{ link.url }}"
+                                class="social-padding" [ngClass]="{'no-border': last}">
+                                <i [ngClass]="link.iconClass + ' social-icon'"></i>
+                                <span class="social-name">{{ link.name }}</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- profile-page.component.html -->
+
+                <div class="user-info">
+                    <div class="user-info">
+                        <div class="head-1">User Information</div>
+
+                        <form action="" class="form-sec" *ngIf="currentUser">
+                            <div class="form-field display">
+                                <div class="form-head">Name:</div>
+                                <input type="text" class="input-name" [(ngModel)]="currentUser.fname" name="fname"
+                                    required>
+                            </div>
+                            <div class="form-field display">
+                                <div class="form-head">Email:</div>
+                                <input type="email" class="input-name" [(ngModel)]="currentUser.email" name="email"
+                                    required>
+                            </div>
+                            <div class="form-field display">
+                                <div class="form-head">Phone:</div>
+                                <input type="number" class="input-name" [(ngModel)]="currentUser.phone" name="phone"
+                                    required>
+                            </div>
+                            <div class="form-field display">
+                                <div class="form-head">Password:</div>
+                                <input type="password" class="input-name" [(ngModel)]="currentUser.pass" name="pass"
+                                    required>
+                            </div>
+                            <button class="form-edit" (click)="updateUserData()">Edit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <app-copyright></app-copyright>
+
+</section>

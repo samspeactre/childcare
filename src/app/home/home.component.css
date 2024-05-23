@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'bold';
+    font-size: 5.2vw;
+}
+
+h2 {
+    font-family: 'bold';
+    font-size: 32px;
+}
+
+p {
+    font-family: 'regular';
+    font-size: 1.04vw;
+}
+
+.home-logo {
+    width: 15.5vw;
+    object-fit: cover;
+}
+
+.container-site {
+    padding-top: 1.2vw;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+}
+
+.right-site {
+    padding-right: 3.5vw;
+}
+
+.right-links {
+    width: 27%;
+}
+
+.home-bg {
+    background: url('../../assets/img/hero-bg.png');
+    background-size: cover;
+    padding-bottom: 7vw;
+}
+
+.logo-text {
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+.logo-bold-text {
+    font-family: 'bold';
+    font-size: 32px;
+}
+
+.search-bar {
+    margin-left: 0.3vw;
+}
+
+.form-styling {
+    border-radius: 20px;
+    width: 100%;
+    float: right;
+    padding: 1vw;
+
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 1vw;
+    background-image: url(../../assets/img/search.png);
+    background-position: 0.5vw 1.1vw;
+    background-size: 1.5vw;
+    background-repeat: no-repeat;
+    color: gray;
+    padding-left: 2.5vw;
+}
+
+.navbar {
+    background-color: var(--dark-blue);
+    margin-top: 1.28vw;
+    padding: 0;
+}
+
+.nav-text {
+    padding-left: 3.3vw;
+    padding-right: 3.3vw;
+    border-right: 1px solid var(--white);
+}
+
+.nav-item:hover .nav-link {
+    border: 0;
+}
+
+.nav-item:hover .nav-text {
+    border: none; /* Override the border property */
+    /* Add other styles as needed */
+}
+
+.border-right {
+    border-right: 0;
+}
+
+.login-nav-item {
+    margin-left: 2vw;
+}
+
+.nav-item a{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-link {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    color: var(--white);
+    font-family: 'mon-regular';
+    font-size: 1.07vw;
+    transition: background-color 0.3s ease, font-family 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--yellow);
+    font-family: 'bold';
+    color: var(--white);
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-login-text {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+}
+
+.login-img {
+    height: 1.5vw;
+    width: 1.3vw;
+}
+
+.head-width {
+    width: 38%;
+}
+
+.head-1 {
+    padding-top: 11.3vw;
+    color: var(--white);
+    text-transform: capitalize;
+    line-height: 5.2vw;
+}
+
+.para-1 {
+    padding-top: 1.5vw;
+    color: rgba(255, 255, 255, 1);
+}
+
+.home-btn-text {
+    padding: 1.4vw 3.2vw;
+    background-color: var(--yellow);
+    color: var(--white);
+    border-radius: 5px;
+    font-family: 'mon-bold';
+    font-size: 0.9vw;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.home-btn-text:hover {
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--white);
+    font-size: 15px;
+}
+
+.home-btn {
+    margin-top: 4.6vw;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .container-site {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .home-bg {
+        background-position: center;
+    }
+
+    .home-logo {
+        width: 40vw;
+    }
+
+    input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-size: 13px;
+        background-image: url(../../assets/img/search.png);
+        background-position: 8px 5.5px;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        color: gray;
+        padding-left: 9.5vw;
+    }
+
+    .login-img {
+        display: none;
+    }
+
+    .login-nav-item{
+        margin-left: -1vw;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .nav-text {
+        padding-left: 4.5vw;
+    }
+
+    .head-width {
+        width: 78%;
+    }
+
+    .head-1 {
+        padding-top: 11.3vw;
+        line-height: 32px;
+    }
+
+    .home-btn-text {
+        padding: 7px 15px;
+        font-size: 9px;
+        border-radius: 5px;
+    }
+
+    .home-btn {
+        margin-top: 2.6vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+        line-height: 2.2vw;
+    }
+
+    .home-logo {
+        width: 19.5vw;
+        object-fit: cover;
+    }
+
+    .search-bar {
+        margin-left: 0vw;
+    }
+
+    .search-bar input {
+        padding-left: 4vw;
+    }
+
+    input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-size: 13px;
+        background-image: url(../../assets/img/search.png);
+        background-position: 8px 9.5px;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        color: gray;
+        padding-left: 9.5vw;
+    }
+
+    .collapse:not(.show) {
+        display: block;
+        display: flex;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .navbar-nav-scroll {
+        display: contents;
+    }
+
+    .head-width {
+        width: 43%;
+    }
+
+    .right-site {
+        width: 73.5%;
+    }
+
+    .nav-link {
+        font-size: 1.3vw;
+    }
+
+    .login-img {
+        display: none;
+    }
+
+    .right-register{
+        margin-left: 20vw;
+    }
+
+    .nav-text {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        border-right: 1px solid var(--white);
+    }
+
+    .home-btn-text{
+        font-size: 1.5vw;
+    }
+
+}

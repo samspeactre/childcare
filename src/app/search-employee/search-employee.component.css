@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'medium';
+    src: url('../../assets/fonts/NeueMontreal-Medium.otf');
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+    color: var(--black);
+}
+
+h1 {
+    font-family: 'bold';
+    font-size: 2.6vw;
+}
+
+h2 {
+    font-family: 'bold';
+    font-size: 1.56vw;
+}
+
+h3 {
+    font-family: 'bold';
+    font-size: 1.3vw;
+}
+
+p {
+    font-family: 'medium';
+    font-size: 0.72vw;
+}
+
+.container-site {
+    padding-left: 4.4vw;
+    padding-right: 4.4vw;
+    padding-top: 1.85vw;
+    height: 100vh;
+    background-color: var(--light-blue);
+}
+
+.search-bars {
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
+}
+
+.name-bar {
+    width: 35.8%;
+}
+
+.form-control {
+    padding: 1vw;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.8vw;
+    font-family: 'regular';
+    width: 19.2vw;
+}
+
+.search-column {
+    width: 62.2%;
+    margin-left: 1.5%;
+}
+
+.search-icon {
+    width: 1.2vw;
+    object-fit: cover;
+}
+
+.search-text {
+    padding-left: 0.2vw;
+
+}
+
+.serach-btn {
+    background-color: var(--yellow);
+    border-radius: 5px;
+    border: 0;
+    padding: 0vw 2vw;
+    margin-left: 3.2%;
+    font-family: "regular";
+    font-size: 0.9vw;
+    color: var(--white);
+}
+
+.employee-card {
+    padding: 0.8vw 1vw;
+    background-color: var(--white);
+    border-radius: 5vw;
+    margin-top: 1.2vw;
+    width: 23.5%;
+    margin-left: 0.98vw;
+}
+
+.card-img img {
+    height: 6.8vw;
+    width: 7vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding: 1.2vw 1vw;
+}
+
+.employee-dob {
+    color: rgba(87, 87, 87, 1);
+    margin-top: 0.5vw;
+    margin-bottom: 0.3vw;
+}
+
+.card-padding{
+    margin-left: 1%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 6.5vw;
+    }
+
+    h2 {
+        font-size: 5.5vw;
+        
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .container-site {
+        padding-top: 3vw;
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+        height: 100vh;
+        margin-top: 0;
+    }
+
+    .search-bars{
+        margin-top: 3.5vw;
+        margin-bottom: 3.5vw;
+        width: 100%;
+    }
+
+    .form-control {
+        padding: 2vw;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .name-bar{
+        width: 33.5%;
+    }
+
+    .search-column{
+        width: 48%;
+        margin-left: 2.5%;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .search-icon{
+        width: 2.5vw;
+    }
+
+    .content-box{
+        padding-top: 1.8vw;
+    }
+
+    .employee-card{
+        padding: 2vw 3vw;
+        border-radius: 12vw;
+        width: 65%;
+        margin-left: 0;
+        margin-bottom: 2.5%;
+    }
+
+    .card-box {
+        padding: 1.2vw 6.5vw;
+        padding-left: 6.5vw;
+    }
+
+    .card-img img{
+        height: 20vw;
+        width: 20vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .card-content {
+        padding: 2.2vw 0vw;
+        padding-left: 3.5vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3.8vw;
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    p {
+        font-size: 2.1vw;
+    }
+
+    .container-site {
+        padding-top: 3vw;
+        padding-bottom: 0;
+        height: 100vh;
+    }
+
+    .form-control {
+        padding: 1vw;
+        font-size: 2vw;
+        width: 30vw;
+    }
+
+    .name-bar {
+        width: 28.8%;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .name-bar {
+        width: 50.7%;
+    }
+
+    .search-column {
+        width: 62.2%;
+        margin-left: 6.5%;
+    }
+
+    .search-icon {
+        width: 2.2vw;
+    }
+
+    .employee-card {
+        padding: 2vw 3vw;
+        width: 48%;
+        margin-left: 0.98vw;
+        margin-bottom: 2%;
+        border-radius: 10vw;
+    }
+
+    .card-padding {
+        margin-right: auto;
+        margin-top: 1vw;
+    }
+
+    .card-img img {
+        height: 14vw;
+        width: 14vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .card-content {
+        padding-left: 3vw;
+        padding-top: 1.5vw;
+    }
+}

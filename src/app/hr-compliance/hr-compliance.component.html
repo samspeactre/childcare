@@ -1,0 +1,42 @@
+<section>
+    <app-dashboard-nav></app-dashboard-nav>
+    <div class="lg-12 md-12">
+        <div class="row">
+            <div class="container-site">
+
+                <div class="display justify-content-between">
+
+                    <h1 class="head-1">HR compliance</h1>
+
+                    <div class="sort-area">
+                        <label for="sortOptions"><span class="sort-text">Sort By:</span></label>
+                        <select id="sortOptions" >
+                            <option value="latest">Latest</option>
+                            <option value="new">New</option>
+                            <option value="old">Old</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="lg-12 pdf-content">
+                    <div class="row justify-content-between">
+                        <div class="lg-3 card-width" *ngFor="let card of cards">
+                            <a [href]="card.url" target="_blank">
+                                <div class="pdf-card">
+                                    <img src="../../assets/img/pdf.png" alt="" class="pdf-logo">
+                                </div>
+                            </a>
+                            <div class="lg-12 card-bottom ">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="card-head-1">{{card.title}}</h2>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-copyright></app-copyright>
+</section>

@@ -1,0 +1,127 @@
+<section>
+    <div class="lg-12 container-site">
+        <div class="row">
+
+            <div class="user-nav">
+                <div class="display justify-content-between">
+
+                    <div class="links">
+                        <a href="" routerLink="/dashboard">Dashboard</a>
+                        <span class="slash">/</span>
+                        <a href="">User-List</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+
+                <div class="db">
+
+                    <div>
+                        <a class="add-btn" (click)="openModal()">ADD</a>
+                    </div>
+
+                    <!-- Modal for adding a new user -->
+
+                    <div id="addUserModal" class="modal">
+                        <div class="modal-content">
+
+
+
+                            <span class="close" (click)="closeModal()">&times;</span>
+                            <h2>Add New User</h2>
+
+
+
+                            <form (submit)="addUser()">
+
+                                <!-- <div class="add-field-text" for="image">Image:</div>
+                                <input type="file" (change)="onFileSelected($event)" accept="image/*"> -->
+
+                                <div class="add-field-text" for="name">Name:</div>
+                                <input class="input-text" type="text" id="name" name="name" [(ngModel)]="newUser.name"
+                                    required>
+                                <div class="add-field-text" for="dob">Date of Birth:</div>
+                                <input class="input-text" type="date" id="dob" name="dob" [(ngModel)]="newUser.dob"
+                                    required>
+
+                                <div class="add-field-text" for="phoneNumber">Phone Number:</div>
+                                <input class="input-text" type="text" id="phoneNumber" name="phoneNumber"
+                                    [(ngModel)]="newUser.phoneNumber" required>
+
+
+
+                                <button type="submit" class="save-btn">Save</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="employee-table">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <!-- Loop through column headers -->
+                                    <th class="header-1">Image</th>
+                                    <th class="header-1">Name</th>
+                                    <th class="header-2">Date Of Birth</th>
+                                    <th class="header-2">Phone</th>
+                                    <th class="header-3">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr *ngFor="let item of data">
+
+                                    <td>
+                                        <img [src]="item['image']" alt="User Image" width="50" height="50">
+                                    </td>
+                                    <td>{{ item.name }}</td>
+                                    <td>{{ item.dob }}</td>
+                                    <td>{{ item.phoneNumber }}</td>
+
+                                    <td>
+
+                                        <a class="edit-btn" (click)="openEditModal(item)">Edit</a>
+
+                                        <!-- Edit modal -->
+
+                                        <div *ngIf="selectedUser === item">
+                                            <div id="editUserModal" class="modal">
+                                                <div class="modal-content">
+                                                    <span class="close" (click)="closeEditModal()">&times;</span>
+                                                    <h2>Edit User</h2>
+                                                    <form (submit)="updateUser()">
+                                                        <div class="add-field-text" for="edit-name">Name:</div>
+                                                        <input class="input-text" type="text" id="edit-name"
+                                                            name="edit-name" [(ngModel)]="selectedUser.name" required>
+                                                        <div class="add-field-text" for="edit-dob">Date of Birth:</div>
+                                                        <input class="input-text" type="text" id="edit-dob"
+                                                            name="edit-dob" [(ngModel)]="selectedUser.dob" required>
+                                                        <button type="submit" class="save-btn">Save</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <a class="delete-btn" (click)="deleteUser(item)">Delete</a>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <app-copyright></app-copyright>
+
+</section>

@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: var(--black);
+}
+
+h1 {
+    font-family: 'bold';
+    font-size: 2.6vw;
+}
+
+h3 {
+    font-family: 'regular';
+    font-size: 0.92vw;
+}
+
+h4 {
+    font-family: 'medium';
+    font-size: 0.82vw;
+}
+
+.login-comp-form {
+    width: 30.85%;
+}
+
+.left-site {
+    padding-left: 3.5vw;
+    padding-right: 1.5vw;
+}
+
+.logo {
+    margin-bottom: 10.3vw;
+}
+
+.logo img {
+    width: 13.7vw;
+    object-fit: cover;
+    padding-top: 2.6vw;
+
+}
+
+.head-1 {
+    margin-bottom: 1.1vw;
+}
+
+.login-form {
+    width: 28.8vw;
+    padding-top: 2.1vw;
+}
+
+.login-input {
+    width: 100%;
+    border: 0;
+    border-bottom: 0.1vw solid black;
+    padding: 0.73vw 1vw;
+    font-size: 0.72vw;
+    font-family: 'regular';
+    color: var(--black);
+    margin-bottom: 0.55vw;
+}
+
+.check-label {
+    font-family: 'medium';
+    font-size: 0.85vw;
+    color: var(--black);
+    margin-left: 0.5vw;
+}
+
+.login-img {
+    width: 100%;
+    object-fit: cover;
+    height: 49.6vw;
+    border-radius: 3vw;
+}
+
+.login-img-portion {
+    margin-top: 1.2vw;
+    margin-bottom: 1.4vw;
+    width: 66.2%;
+}
+
+.checkbox-width {
+    width: 27.7vw;
+    margin-top: 0.85vw;
+    margin-bottom: 2.5vw;
+}
+
+.forget {
+    align-content: center;
+}
+
+.login-button {
+    width: 100%;
+    margin-bottom: 3.2vw;
+}
+
+.login-btn {
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 1.3vw 13.3vw;
+    font-family: 'medium';
+    font-size: 0.92vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+.error-message {
+    font-family: 'bold';
+    font-size: 1vw;
+    color: red;
+}
+
+.create-acc {
+    width: 26.8vw;
+    text-align: center;
+}
+
+.acc-color {
+    color: var(--yellow);
+    font-family: 'bold';
+    font-size: 0.82vw;
+}
+
+.checkbox-input {
+    width: 0.8vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.forget {
+    cursor: pointer;
+}
+
+.error-message{
+    font-family: "bold";
+    font-size: 1vw;
+    color: red;
+    margin-bottom: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3.5vw;
+        margin-top: 2.5vw;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .left-site {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-bottom: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .head-1 {
+        margin-bottom: 3.5vw;
+    }
+
+    .logo {
+        text-align: start;
+    }
+
+    .logo img {
+        width: 45vw;
+        margin-bottom: 10vw;
+    }
+
+    .login-input {
+        width: 100%;
+        font-size: 3.5vw;
+        padding: 3vw 2vw;
+    }
+
+    .checkbox-width {
+        width: 100%;
+        font-size: 2.7vw;
+    }
+
+    .check-input {
+        margin-top: 3.5vw;
+    }
+
+    .login-button {
+        width: 100%;
+        margin-top: 6vw;
+    }
+
+    .login-btn {
+        padding: 3.5vw 37.9vw;
+        font-size: 3.5vw;
+    }
+
+    .create-acc {
+        width: 100%;
+        margin-top: 6vw;
+        font-size: 3.5vw;
+    }
+
+    .acc-color {
+        font-size: 3.5vw;
+    }
+
+    .login-img {
+        display: none;
+    }
+
+    .login-comp-form {
+        align-content: center;
+        width: 100%;
+    }
+
+    .login-form {
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    .check-label {
+        font-size: 2.7vw;
+    }
+
+    .checkbox-width {
+        margin-top: 3vw;
+        align-items: center;
+    }
+
+    .checkbox-input {
+        width: 3vw;
+        margin-top: 0;
+    }
+
+    .sm-12 {
+        width: 100%;
+    }
+
+    .login-img-portion {
+        display: none;
+    }
+
+    .error-message{
+        font-family: "bold";
+        font-size: 4.5vw;
+        margin-top: 5.5vw;
+        color: red;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    h4 {
+        font-size: 2.5vw;
+    }
+
+    /* section{
+        background-image: url(../../assets/img/login-img.png);
+        background-position: top;
+        background-repeat: no-repeat;
+    } */
+
+    .left-site {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 0;
+        height: 100vh;
+    }
+
+    .login-comp-form{
+        align-content: center;
+        width: 100%;
+    }
+
+    .login-form{
+        width: 100%;
+        margin-top: 3vw;
+    }
+
+    .logo{
+        width: 30vw;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+
+    .login-img-portion {
+        display: none;
+    }
+
+    .login-input {
+        font-size: 2.2vw;
+        padding: 1.5vw 1.5vw 1.5vw;
+
+    }
+
+    .checkbox-width{
+        width: 97%;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .checkbox-input{
+        width: 2.8vw;
+    }
+
+    .check-label {
+        font-size: 2.5vw;
+        margin-left: 1vw;
+    }
+
+    .login-button{
+        width: 100%;
+        margin-bottom: 4.2vw;
+    }
+
+    .login-btn{
+        padding: 2vw 27.8vw;
+        font-size: 3vw;
+    }
+
+    .create-acc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .acc-color{
+        font-size: 2.5vw;
+    }
+
+    .error-message{
+        font-family: "bold";
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+        color: red;
+    }
+}

@@ -1,0 +1,182 @@
+h1{
+    font-size: 1.5vw;
+}
+
+h2{
+    font-family: 'bold';
+    font-size: 1.5vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-site{
+   padding-left: 4.5vw;
+   padding-right: 4.5vw;
+   height: 100vh;
+   background-color: var(--light-blue);
+}
+
+.user-nav{
+    width: 100%;
+    background-color: var(--dark-blue);
+    margin-top: 2.5vw;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw ;
+}
+
+.links a,
+.back-btn a{
+    font-family: 'medium';
+    font-size: 1.5vw;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover,
+.back-btn a:hover{
+  color: var(--yellow);
+}
+
+.slash{
+    font-size: 1.5vw;
+    color: var(--white);
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.db{
+    margin-top: 1vw;
+    background-color: var(--white);
+    padding: 1.5vw 1vw;
+}
+
+.add-btn{
+    padding: 0.85vw 3vw;
+    background-color: var(--yellow);
+    font-size: 1.2vw;
+    color: var(--white);
+    font-family: 'bold';
+    border-radius: 0.5vw;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover{
+    background-color: transparent;
+    color:  var(--yellow);
+    border: 0.1vw solid var(--yellow);
+}
+
+.employee-table{
+ margin-top: 1.5vw;
+ width: 100%;
+}
+
+table{
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+th{
+    font-size: 1.5vw;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding: 0.5vw 1vw;
+}
+
+.header-1,
+.header-2{
+    width: 36vw;
+}
+
+.header-3{
+    width: 20%;
+}
+
+td{
+    padding: 0.8vw 1vw;
+    font-size: 1.2vw;
+    color: var(--black);
+    font-family: 'bold';
+    border-bottom: 0.1vw solid var(--black);
+} 
+
+table tbody tr:last-child {
+    border-bottom: 0;
+}
+
+.delete-btn{
+    background-color: rgb(240, 58, 58);
+    padding: 0.5vw 1.5vw;
+    margin-right: 0.8vw;
+    border-radius: 0.3vw;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.edit-btn{
+    background-color: var(--yellow);
+    padding: 0.5vw 1.5vw;
+    margin-right: 0.8vw;
+    border-radius: 0.3vw;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.modal-content{
+    width: 24%; /* Adjust the width as needed */
+    position: relative; /* Change absolute to relative positioning */
+    margin: 0 auto; /* Center the modal horizontally */
+    padding: 1vw;
+    background-color: var(--white); /* Add a background color to improve visibility */
+    border-radius: 0.5vw; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    margin-top: 7.5vw;
+    margin-left: 15vw;
+}
+
+
+.add-field-text{
+    font-size: 1.2vw;
+    font-family: 'medium';
+    padding-bottom: 0.5vw;
+}
+
+.button, input, optgroup, select, textarea{
+    font-size: 1.2vw;
+    font-family: 'regular';
+    padding: 0.2vw 0.2vw;
+    width: 100%;
+}
+
+.save-btn{
+    padding: 0.4vw 1vw;
+    color: var(--white);
+    background-color: green;
+    border: 0;
+    font-size: 1vw;
+    font-family: 'medium';
+    margin-top: 0.7vw;
+    margin-left: 17.2vw;
+}
+
+.close{
+    background-color: red;
+    color: var(--white);
+    font-size: 1.2vw;
+    font-family: 'medium';
+    width: 3vw;
+    border-radius: 0.3vw;
+    text-align: center;
+    margin-left: 18.3vw;
+    cursor: pointer;
+}
+
+td img{
+    height: 2.6vw;
+    width: 2.6vw!important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ 
